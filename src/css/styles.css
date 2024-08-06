@@ -34,7 +34,7 @@ input:focus {
     border: 1px solid #000;
 }
 
-button {
+.button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -50,8 +50,10 @@ button {
     cursor: pointer;
 }
 
-button:hover,
-button:focus {
+.button:hover,
+.button:focus,
+.load:hover,
+.load:focus {
     background: #6c8cff;
 }
 
@@ -139,4 +141,26 @@ span {
     color: #2e2f42;
     font-family: "Montserrat", sans-serif;
     text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.load {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 125px;
+    height: 40px;
+    background-color: #4e75ff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    cursor: pointer;
 }

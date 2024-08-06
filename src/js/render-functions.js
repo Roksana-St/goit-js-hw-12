@@ -1,9 +1,8 @@
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+
 
 export function renderImages(images) {
   const gallery = document.querySelector('.gallery');
-  gallery.innerHTML = '';
+  // gallery.innerHTML = '';
 
   const markup = images.map(image => {
     return `
@@ -33,12 +32,13 @@ export function renderImages(images) {
 
   gallery.insertAdjacentHTML('beforeend', markup);
 
-    const lightbox = new SimpleLightbox('.gallery a', {captions: true,
-        captionsDelay: 250});
-    lightbox.refresh();
+   
 }
 
 export function clearGallery() {
     const gallery = document.querySelector('.gallery');
     gallery.innerHTML = '';
 }
+
+
+
